@@ -1,7 +1,7 @@
 # Network-Traffic-Analysis: Phishing & Malware Incident Investigation
 
 ## Project Overview
-This project focuses on the tactical analysis of packet capture ('.pcap') files to isolate, identify, and document malicious insider activity and phishing campaigns within a simulated corporate network. Using Wireshark, network traffic logs were filtered and parsed to extract indicators of compromise (IoCs), trace phishing emails distribution, and identify compromised endpoint targets. 
+This project focuses on the tactical analysis of packet capture (`.pcap`) files to isolate, identify, and document malicious insider activity and phishing campaigns within a simulated corporate network. Using Wireshark, network traffic logs were filtered and parsed to extract indicators of compromise (IoCs), trace phishing emails distribution, and identify compromised endpoint targets. 
 
 ## Scenario & Investigation Objectives
 A network security alert flagged suspicious high-volume Simple Mail Transfers Protocol (SMTP) traffic. The objective was to: 
@@ -40,15 +40,15 @@ To Isolate the malicious actor out of the raw network traffic captures, the foll
 ## Indicators of Compromise (IoCs) Discovered
 
  ### 1. Attacker Infrastructure
-* **Malicious Source IP:** '10.6.1.104' (Identified in 'C.pcap')
+* **Malicious Source IP:** `10.6.1.104` (Identified in `C.pcap`)
 
 ### 2. Phishing Campaign Artifacts
 The attacker deployed an aggressive email phishing campaign containing threatening and urgent subject headers to induce user interaction. The extracted email indicators included:
-* **Subject Line 1:** 'Read Carefully! - dayrit'
-* **Subject Line 2:** 'I can destroy everything! - 12345678'
-* **Subject Line 3:** 'Your password! - nafd111'
+* **Subject Line 1:** `Read Carefully! - dayrit`
+* **Subject Line 2:** `I can destroy everything! - 12345678`
+* **Subject Line 3:** `Your password! - nafd111`
   
 ## Remediation & Key Findings
-The investigation successfully proved that an internal endpoint at '10.6.1.104' was actively communicating outbound malware signatures and broadcasting localized phishing scams. The packet inspection confirmed complete end-user device compromise.
+The investigation successfully proved that an internal endpoint at `10.6.1.104` was actively communicating outbound malware signatures and broadcasting localized phishing scams. The packet inspection confirmed complete end-user device compromise.
 
    *Recommended next steps based on this analysis include isolating the host IP, revoking active session tokens for affected users, and initiating an endpoint incident response workflow.*
