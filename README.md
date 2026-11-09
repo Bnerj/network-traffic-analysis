@@ -19,17 +19,22 @@ To Isolate the malicious actor out of the raw network traffic captures, the foll
 
 1. **Sender isolation:** Applied the Wireshark filter 'smtp contains "FROM"' to isolate outgoing mail packets and rapidly identify the source email address and corresponding internal IP address.
 
-<img width="1468" height="954" alt="C PCAP_S2" src="https://github.com/user-attachments/assets/f2ab1c52-ac9b-4873-ba39-9f1a66026e25" />
+<img width="1468" height="954" alt="C PCAP_S2" src="https://github.com/user-attachments/assets/ab629db3-2a69-4be7-87b6-9b6cfc02692f" />
+
  
 2. **Payload Triage:** Utilized the filter 'smtp.data.fragment' to extract and inspect the raw data steams attached to the identified sender.
 
-<img width="1470" height="953" alt="C PCAP_S3" src="https://github.com/user-attachments/assets/9aca9da1-ff13-481a-83ec-193063abc567" />
+<img width="1470" height="953" alt="C PCAP_S3" src="https://github.com/user-attachments/assets/92abc800-c3e0-492c-826a-b847fcca5e4c" />
+
 
 3. **Triage Aggregation review:** Analyzed the Packet List and Packet Details panes. A pattern of high-frequency packets originating from a single source IP traveling to the same internal destination address was observed.
 
- <img width="1470" height="956" alt="C PCAP_S4" src="https://github.com/user-attachments/assets/c0b186f7-69b1-49f1-b06f-ebdbd307cf4f" />
+ <img width="1470" height="956" alt="C PCAP_S4" src="https://github.com/user-attachments/assets/c1926a81-b0ce-48d5-96a4-d086e869d988" />
+
 
 5. **Packet Deep-Dive:** double-clicked high-risk packets within the file 'C.pcap' to examine the full frame structure. This confirmed that the sender has successfully targeted an internal endpoint, leading to malware infection and credential compromise.
+
+<img width="1470" height="956" alt="C PCAP_S5" src="https://github.com/user-attachments/assets/5568c90b-7029-40d7-b534-1a7ecd66df37" />
 
 
 ## Indicators of Compromise (IoCs) Discovered
