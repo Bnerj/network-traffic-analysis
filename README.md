@@ -18,9 +18,19 @@ A network security alert flagged suspicious high-volume Simple Mail Transfers Pr
 To Isolate the malicious actor out of the raw network traffic captures, the following procedural steps were executed: 
 
 1. **Sender isolation:** Applied the Wireshark filter 'smtp contains "FROM"' to isolate outgoing mail packets and rapidly identify the source email address and corresponding internal IP address.
+
+<img width="1468" height="954" alt="C PCAP_S2" src="https://github.com/user-attachments/assets/f2ab1c52-ac9b-4873-ba39-9f1a66026e25" />
+ 
 2. **Payload Triage:** Utilized the filter 'smtp.data.fragment' to extract and inspect the raw data steams attached to the identified sender.
+
+<img width="1470" height="953" alt="C PCAP_S3" src="https://github.com/user-attachments/assets/9aca9da1-ff13-481a-83ec-193063abc567" />
+
 3. **Triage Aggregation review:** Analyzed the Packet List and Packet Details panes. A pattern of high-frequency packets originating from a single source IP traveling to the same internal destination address was observed.
-4. **Packet Deep-Dive:** double-clicked high-risk packets within the file 'C.pcap' to examine the full frame structure. This confirmed that the sender has successfully targeted an internal endpoint, leading to malware infection and credential compromise.
+
+ <img width="1470" height="956" alt="C PCAP_S4" src="https://github.com/user-attachments/assets/c0b186f7-69b1-49f1-b06f-ebdbd307cf4f" />
+
+5. **Packet Deep-Dive:** double-clicked high-risk packets within the file 'C.pcap' to examine the full frame structure. This confirmed that the sender has successfully targeted an internal endpoint, leading to malware infection and credential compromise.
+
 
 ## Indicators of Compromise (IoCs) Discovered
 
