@@ -13,8 +13,8 @@ A network security alert flagged suspicious high-volume Simple Mail Transfers Pr
 * **Network Analysis:** Wireshark
 * **Protocols Investigated:** SMTP, TCP/IP
 * **Environment:** Codepath Cybersecurity Sandbox
-
-##Investigated methodology & Analysis Workflow 
+ 
+## Investigated methodology & Analysis Workflow 
 To Isolate the malicious actor out of the raw network traffic captures, the following procedural steps were executed: 
 
 1. **Sender isolation:** Applied the Wireshark filter 'smtp contains "FROM"' to isolate outgoing mail packets and rapidly identify the source email address and corresponding internal IP address.
@@ -24,10 +24,10 @@ To Isolate the malicious actor out of the raw network traffic captures, the foll
 
 5. ## Indicators of Compromise (IoCs) Discovered
 
-6. ###1. Attacker Infrastructure
+6. ### 1. Attacker Infrastructure
 7. * **Malicious Source IP:** '10.6.1.104' (Identified in 'C.pcap')
 
-   ###2. Phishing Campaign Artifacts
+   ### 2. Phishing Campaign Artifacts
    The attacker deployed an aggressive email phishing campaign containing threatening and urgent subject headers to induce user interaction. The extracted email indicators included:
    * **Subject Line 1:** 'Read Carefully! - dayrit'
    * **Subject Line 2:** 'I can destroy everything! - 12345678'
