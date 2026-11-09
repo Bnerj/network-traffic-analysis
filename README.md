@@ -22,10 +22,10 @@ To Isolate the malicious actor out of the raw network traffic captures, the foll
 3. **Triage Aggregation review:** Analyzed the Packet List and Packet Details panes. A pattern of high-frequency packets originating from a single source IP traveling to the same internal destination address was observed.
 4. **Packet Deep-Dive:** double-clicked high-risk packets within the file 'C.pcap' to examine the full frame structure. This confirmed that the sender has successfully targeted an internal endpoint, leading to malware infection and credential compromise.
 
-5. ## Indicators of Compromise (IoCs) Discovered
+## Indicators of Compromise (IoCs) Discovered
 
-6. ### 1. Attacker Infrastructure
-7. * **Malicious Source IP:** '10.6.1.104' (Identified in 'C.pcap')
+ ### 1. Attacker Infrastructure
+ * **Malicious Source IP:** '10.6.1.104' (Identified in 'C.pcap')
 
    ### 2. Phishing Campaign Artifacts
    The attacker deployed an aggressive email phishing campaign containing threatening and urgent subject headers to induce user interaction. The extracted email indicators included:
