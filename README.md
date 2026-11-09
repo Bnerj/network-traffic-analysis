@@ -25,15 +25,15 @@ To Isolate the malicious actor out of the raw network traffic captures, the foll
 ## Indicators of Compromise (IoCs) Discovered
 
  ### 1. Attacker Infrastructure
- * **Malicious Source IP:** '10.6.1.104' (Identified in 'C.pcap')
+* **Malicious Source IP:** '10.6.1.104' (Identified in 'C.pcap')
 
-   ### 2. Phishing Campaign Artifacts
-   The attacker deployed an aggressive email phishing campaign containing threatening and urgent subject headers to induce user interaction. The extracted email indicators included:
-   * **Subject Line 1:** 'Read Carefully! - dayrit'
-   * **Subject Line 2:** 'I can destroy everything! - 12345678'
-   * **Subject Line 3:** 'Your password! - nafd111'
+### 2. Phishing Campaign Artifacts
+The attacker deployed an aggressive email phishing campaign containing threatening and urgent subject headers to induce user interaction. The extracted email indicators included:
+* **Subject Line 1:** 'Read Carefully! - dayrit'
+* * **Subject Line 2:** 'I can destroy everything! - 12345678'
+* **Subject Line 3:** 'Your password! - nafd111'
   
-   ## Remediation & Key Findings
-   The investigation successfully proved that an internal endpoint at '10.6.1.104' was actively communicating outbound malware signatures and broadcasting localized phishing scams. The packet inspection confirmed complete end-user device compromise.
+## Remediation & Key Findings
+The investigation successfully proved that an internal endpoint at '10.6.1.104' was actively communicating outbound malware signatures and broadcasting localized phishing scams. The packet inspection confirmed complete end-user device compromise.
 
    *Recommended next steps based on this analysis include isolating the host IP, revoking active session tokens for affected users, and initiating an endpoint incident response workflow.*
