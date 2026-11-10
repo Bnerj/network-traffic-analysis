@@ -34,7 +34,7 @@ To Isolate the malicious actor out of the raw network traffic captures, the foll
 3. **Triage Aggregation review:** Analyzed the Packet List and Packet Details panes. A pattern of high-frequency packets originating from a single source IP traveling to the same internal destination address was observed.
 
  
- <img width="1470" height="956" alt="C PCAP_S4" src="https://github.com/user-attachments/assets/c1926a81-b0ce-48d5-96a4-d086e869d988" />
+<img width="1470" height="920" alt="C PCAP_S4" src="https://github.com/user-attachments/assets/037efb88-e1eb-4512-b655-6a217863ba9c" />
 
 <br>
 
