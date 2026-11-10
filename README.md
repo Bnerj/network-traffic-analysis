@@ -60,3 +60,5 @@ The attacker deployed an aggressive email phishing campaign containing threateni
 The investigation successfully proved that an internal endpoint at `10.6.1.104` was actively communicating outbound malware signatures and broadcasting localized phishing scams. The packet inspection confirmed complete end-user device compromise.
 
    *Recommended next steps based on this analysis include isolating the host IP, revoking active session tokens for affected users, and initiating an endpoint incident response workflow.*
+
+CodePath Cybersecurity Bootcamp | Unit 1 Project: Network Traffic Analysis | Personal Technical Documentation
